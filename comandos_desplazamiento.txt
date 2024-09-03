@@ -1,0 +1,5 @@
+avanzar 3 unidades
+girar 270 grados
+avanzar 4 unidades
+fotografiar roca
+composicion duna 'duna'

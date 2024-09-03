@@ -1,0 +1,4 @@
+crater 3 unidades 2 6
+duna 1 unidades 1 1
+monticulo 5 unidades 7 9
+roca 1 unidades 10 10
