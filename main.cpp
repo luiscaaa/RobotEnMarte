@@ -147,30 +147,13 @@ bool validarComando(vector<string> comando, Robot& robot, int& num_aux, int& num
         robot.ubicar_elementos(arbol);
         if(!arbol.esVacio()){
           cout << "Los elementos han sido procesados exitosamente." << endl;
-        }/*else{
-          cout << "Vacio" << endl;
         }
-
-       
-      try {
-     cout << "Dato de la raiz: " << arbol.obtenerDatoRaiz().get_tipo() << endl;
-      } catch (const std::runtime_error& e) {
-    std::cout << "Error: " << e.what() << std::endl;
-      }
-
-      arbol.preOrden(arbol.obtenerRaiz());
-      cout << endl;*/
 
       //cout << arbol.obtenerRaiz()->getHijo(4);
     
         return true;
       }
   else if (comando[0]=="en_cuadrante" && comando.size()== 5 ){
-    /*if(!arbol.esVacio()){
-          cout << "Holi" << endl;
-        }else{
-          cout << "Vacio" << endl;
-        }*/
         robot.en_cuadrante(stoi(comando[1]), stoi(comando[2]), stoi(comando[3]), stoi(comando[4]), arbol);
         return true;
       }
@@ -231,11 +214,6 @@ int main() {
       comandoaux = lowerCase(comandoaux);
       comando = separar_palabras(comandoaux);
       valido = validarComando(comando, robot, num_aux, num_elem, arbol, g);
-      /*if(valido){
-        cout << "Comando valido" << endl;
-      }else{
-        cout << "Comando invalido" << endl;
-      }*/
       if(!valido){
         cout << "Comando invalido" << endl;
       }
